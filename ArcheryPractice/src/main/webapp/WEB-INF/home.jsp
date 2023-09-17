@@ -1,21 +1,42 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    
+	pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Archery Practice</title>
+<title>Archery Practice Home</title>
 </head>
 <body>
 
 
-<h1>You did it!!!</h1>
+	<h1>Home</h1>
 
-${ArcheryPractice}
+	<form action="show.do" method="get">
+		Session ID <input type="text" name="sessionId"><input
+			type="submit" value="Show Session">
 
+	</form>
 
+<br>
+<br>
+
+<a href="showall.do">Show all Practice Sessions</a>
+
+<br>
+<br>
+
+<!-- <a href="create.do">Create a new session</a>
+ -->
+<form action="create.do" method="get">
+<input type="hidden" name="createForm"/>
+
+<input type="submit" value="Create new session"/>
+
+</form>
 </body>
 </html>
+
+
