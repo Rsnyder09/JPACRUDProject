@@ -8,14 +8,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Archery Practice Update</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 
 
-
+	<div class="header">
 	<h1>Update session</h1>
 	<p>"*" indicates required fields</p>
+	</div>
 	<br>
 
 	<form action="update.do" method="post">
@@ -58,7 +60,8 @@
 		<input type="submit" />
 		
 	</form>
-
+		<br>
+		<br>
 <a href="home.do">Go back to home</a>
 
 

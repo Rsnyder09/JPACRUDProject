@@ -1,18 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    
+	pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Archery Practice Delete Session</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 
-<h1>Session was deleted</h1>
+	<h1>Session was deleted</h1>
 
 
 
@@ -21,8 +22,7 @@
 	<br>
 	<br>
 
-	<a href="home.do" role="button" >Back
-		to home</a>
+	<a href="home.do" role="button">Back to home</a>
 
 
 </body>

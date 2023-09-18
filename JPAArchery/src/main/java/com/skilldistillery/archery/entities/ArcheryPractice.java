@@ -71,8 +71,6 @@ public class ArcheryPractice {
 		this.duration = duration;
 	}
 
-	
-
 	public int getCoffee() {
 		return coffee;
 	}

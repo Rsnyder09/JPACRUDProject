@@ -8,12 +8,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Archery Practice Session</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<a href="home.do">Go back to home</a>
-	<br>
-	<h1>Session ID: ${ArcheryPractice.id}</h1>
 
+	<div class="header">
+		<h1>Session ID: ${ArcheryPractice.id}</h1>
+	</div>
 	<c:choose>
 
 		<c:when test="${empty ArcheryPractice }">
@@ -71,7 +72,8 @@
 		<input type="hidden" name="sessionId" value="${ArcheryPractice.id }" />
 		<input type="submit" value="Delete" />
 	</form>
-
-
+	<br>
+	<br>
+	<a href="home.do">Go back to home</a>
 </body>
 </html>

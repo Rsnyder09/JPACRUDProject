@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.header {
+	padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+
+
+
+
+body {
+	
+background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
+
+}
+
+table,
+th,
+td {
+	border: solid white 1px;
+	border-spacing: 1px;
+}
+
+h1 {
+	font-style: italic;
+}

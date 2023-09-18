@@ -37,7 +37,7 @@ public class ArcheryController {
 	@RequestMapping(path = "create.do", method = RequestMethod.POST )
 	public String createNewSession(Model model, ArcheryPractice ap) {
 		model.addAttribute("ArcheryPractice", archeryDao.create(ap));
-		return "createForm";
+		return "show";
 	}
 
 	@RequestMapping(path = "create.do", method = RequestMethod.GET )
@@ -51,7 +51,7 @@ public class ArcheryController {
 		ModelAndView mv = new ModelAndView();
 		archeryDao.update(ap);
 		mv.addObject("ArcheryPractice", archeryDao.findById(ap.getId()));
-		mv.setViewName("update");
+		mv.setViewName("show");
 		return mv;
 	}
 	@RequestMapping(path = "updateForm.do", method = RequestMethod.GET, params = "sessionId")
@@ -63,21 +63,6 @@ public class ArcheryController {
 		return mv;
 	}
 	
-//	@RequestMapping(path= "updateForm.do", method = RequestMethod.POST)
-//	public String updateSession(ArcheryPractice ap, Model model, int id) {
-//		ap = archeryDao.findById(id);
-//		model.addAttribute("ArcheryPractice", ap);
-//		return "updateForm";
-//	}
-//	
-//	@RequestMapping(path = "updateForm.do", method = RequestMethod.GET)
-//	public String updateSession(Model model) {
-//		return "updateForm";
-//	}
-	
-	
-	
-
 
 	
 	@RequestMapping(path = "deleted.do", params = "sessionId")

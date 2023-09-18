@@ -8,34 +8,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Archery Practice Home</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-
-	<h1>Home</h1>
-
+	<div class="header">
+		<h1>Archery Practice Sessions</h1>
+	</div>
+	<br>
+	<br>
 	<form action="show.do" method="get">
 		Session ID <input type="text" name="sessionId"><input
 			type="submit" value="Show Session">
 
 	</form>
 
-<br>
-<br>
+	<br>
+	<br>
+	<form action="create.do" method="get">
+		<input type="hidden" name="createForm" /> <input type="submit"
+			value="Create new session" />
 
-<a href="showall.do">Show all Practice Sessions</a>
+	</form>
 
-<br>
-<br>
+	<br>
+	<br>
 
-<!-- <a href="create.do">Create a new session</a>
- -->
-<form action="create.do" method="get">
-<input type="hidden" name="createForm"/>
+	<a href="showall.do">Show all Practice Sessions</a>
 
-<input type="submit" value="Create new session"/>
 
-</form>
 </body>
 </html>
 
